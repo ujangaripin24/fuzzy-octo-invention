@@ -1,0 +1,26 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Sesson</th>
+                <th scope="col">Tipe</th>
+                <th scope="col">Poster</th>
+                <th scope="col">Ringkasan</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let post of posts">
+            <tr>
+                <th></th>
+                <th>{{ post.name }}</th>
+                <th>{{ post.season }}</th>
+                <th>{{ post.type }}</th>
+                <th> <img src="{{ post.image.medium }}" alt="Gambar Poster"> </th>
+                <th>{{ post.summary }}</th>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
